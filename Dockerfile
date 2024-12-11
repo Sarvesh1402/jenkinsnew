@@ -7,13 +7,13 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-#RUN npm install
+RUN npm install
 
 # Copy the application source code
 COPY . .
 
 # Optional: Run tests (can be commented out if not needed)
- RUN npm run test
+RUN npm run test
 
 # Expose the application port
 EXPOSE 8000
